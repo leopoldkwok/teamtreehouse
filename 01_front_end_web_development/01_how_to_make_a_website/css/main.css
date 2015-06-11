@@ -6,6 +6,9 @@ a {
 	max-width: 940px;
 	margin: 0 auto;
 	padding: 0 5%;
-	background: orange;
+}
 
+#logo {
+	text-align: center;
+	margin: 0;
 }
