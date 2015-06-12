@@ -1,7 +1,36 @@
-/* common mobile devices */
+/* mobile devices */
 @media screen and (min-width: 480px) {
+	/*********************
+	TWO COLUMN LAYOUT
+	**********************/
+	#primary {
+		width: 50%;
+		float: left;
+	}
 	
+	#secondary {
+		width: 40%;
+		float: right;
+	}
 }
+
+	/************************************
+	3(columns) * 5(width 2 * 2.5 margin) = 15
+	100% - 15%(margin) = 85%
+	85% / 3(columns) = 28.333333
+	**********************************/
+
+	/*********************
+	PAGE: PORTFOLIO
+	**********************/
+
+	#gallery li {
+		width: 28.3333%;
+	}
+
+	#gallery li:nth-child(3n+1) {
+		clear: left;
+	}
 
 /* large tablets */
 
