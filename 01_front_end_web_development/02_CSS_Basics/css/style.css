@@ -1,3 +1,28 @@
+header {
+	background-color: orange;
+}
+
+body {
+	color: #878787;	
+	margin: 0;
+}
+
+h1 {
+	font-size: 90px;
+	color: white;
+}
+
+h2 {
+	font-size: 53px;
+}
+
+h3 {
+	font-size: 20px;
+	color: #48525c;
+}
+
+
+
 
 /* Universal selectors*/
 /* * {
