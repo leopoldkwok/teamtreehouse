@@ -1,4 +1,13 @@
-@import "import-styles.css";
+
+/* Universal selectors*/
+/* * {
+	margin: 0;
+	padding: 0;
+	color: red;
+}*/
+
+
+/*@import "import-styles.css";
 
 body {
 	text-align: center;
@@ -15,4 +24,5 @@ header {
 
 p {
 	font-size: 20px;
-}			
+}		*/	
+
