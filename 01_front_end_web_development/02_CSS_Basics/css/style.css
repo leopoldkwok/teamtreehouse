@@ -2,6 +2,17 @@
 	background-color: orange;
 }
 
+.title  {
+	color: white;
+	font-size: 26px;
+}
+
+ol li {
+	background-color: tomato;
+	color: white;
+	margin-bottom: 5px;
+}
+
 body {
 	color: #878787;	
 	margin: 0;
