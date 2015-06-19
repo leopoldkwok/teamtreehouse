@@ -1,5 +1,11 @@
+
+
+
+
+/* Class Selectors */
+
 .main-header {
-	background-color: orange;
+	background-color: orange; /* This makes our header bg header orange */
 }
 
 .title  {
@@ -12,6 +18,8 @@ ol li {
 	color: white;
 	margin-bottom: 5px;
 }
+
+/* Type selectors */
 
 body {
 	color: #878787;	
@@ -62,6 +70,8 @@ a:active {
 	color: white;
 	background-color: orange;
 }
+
+/* ID selectors */
 
 #main-footer {
 	padding-top: 60px;
