@@ -9,10 +9,14 @@ body {
 h1 {
 	font-size: 5.625rem; /* 90px / 16px */
 	color: rgba(255, 255, 255, .5);
+	text-transform: uppercase;
+	font-weight: normal;
 }
 
 h2 {
 	font-size: 53px;
+	text-decoration: underline;
+	font-weight: normal;
 }
 
 h3 {
@@ -20,10 +24,15 @@ h3 {
 	color: #48525c;
 }
 
+p {
+
+}
+
 /* Pseudo - Classes */
 
 a:link {
 	color: rgb(255, 169, 73);
+	text-decoration: none;
 }
 
 a:visited {
@@ -67,7 +76,8 @@ a:active {
 	width: 60%;
 }
 
-.primary-content {
+.primary-content,
+.main-header {
 	text-align: center;
 }
 
