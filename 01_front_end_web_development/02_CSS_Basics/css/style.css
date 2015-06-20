@@ -27,6 +27,13 @@ h3 {
 	line-height: 1.2;
 	margin-bottom: 1.7em; /* 34px */
 }
+/*
+li {
+	display: inline-block;
+	padding: 0 12px;
+	border-right: solid 1px;
+	margin: 80px 0;
+}*/
 
 /* Pseudo - Classes */
 
@@ -69,11 +76,31 @@ a:active {
 	text-align: center;
 }
 
+.primary-content {
+  padding-top: 25px;
+  padding-bottom: 95px;
+}
+
+.secondary-content {
+  padding-top: 80px;
+  padding-bottom: 70px;
+  border-bottom: 2px solid lightgrey;
+}
+
+.callout {
+	font-size: 1.25em;
+	border-bottom: 3px solid;
+	padding: 0 9px 3px;
+	margin-top: 20px;
+	display: inline-block;
+}
+
 .main-footer {
 	padding-top: 60px;
 	padding-bottom: 60px;
 	border-bottom: 10px solid #ffa949;
 }
+
 
 .t-border {
 	border-top: 2px solid lightgrey;
@@ -87,11 +114,15 @@ a:active {
 	margin: auto;
 }
 
+
+
+
+
+
 .wildlife {
 	color: white;
 	background-color: #434a52;
 	padding: 18% 24%;
-
 	border-top: 10px solid #ffa949;
 
 	/*margin-top: 105px;
