@@ -3,11 +3,11 @@
 body {
 	color: #878787;	
 	margin: 0;
-	font-size: 150%;
+	font-size: 1em;
 }
 
 h1 {
-	font-size: 90px;
+	font-size: 5.625em; /* 90px / 16px */
 	color: white;
 }
 
@@ -19,14 +19,6 @@ h3 {
 	font-size: 20px;
 	color: #48525c;
 }
-
-
-
-
-.primary-content {
-	text-align: center;
-}
-
 
 /* Pseudo - Classes */
 
@@ -51,22 +43,33 @@ a:active {
 	background-color: orange;
 }
 
+/* ID selectors */
 
+#main-footer {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	border-bottom: solid 10px orange;
+}
 
 /* Class Selectors */
 
 .main-header {
 	background-color: orange; /* This makes our header bg header orange */
+	font-size: 2em;
 }
 
 .title  {
 	color: white;
-	font-size: 26px;
+	font-size: 1.625em; /* 26px/16px
 }
 
 .primary-content, 
 .secondary-content {
 	width: 60%;
+}
+
+.primary-content {
+	text-align: center;
 }
 
 ol li {
@@ -81,13 +84,7 @@ ol li {
 }
 
 
-/* ID selectors */
 
-#main-footer {
-	padding-top: 60px;
-	padding-bottom: 60px;
-	border-bottom: solid 10px orange;
-}
 
 
 /* Universal selectors*/
