@@ -15,14 +15,17 @@ h1 {
 }
 
 h2 {
-	font-size: 53px;
-	text-decoration: underline;
+	font-size: 3.3125em; /*53px / 16px*/
 	font-weight: normal;
+	line-weight: 1.1;
+	margin-bottom: .5em; /* 26px */ 
 }
 
 h3 {
-	font-size: 20px;
+	font-size: 1.25em; /* 20px / 16px */
 	color: #48525c;
+	line-height: 1.2;
+	margin-bottom: 1.7em; /* 34px */
 }
 
 /* Pseudo - Classes */
@@ -81,6 +84,7 @@ a:active {
 .primary-content, 
 .secondary-content {
 	width: 60%;
+	margin: auto;
 }
 
 .wildlife {
@@ -88,7 +92,14 @@ a:active {
 	background-color: #434a52;
 	padding: 18% 24%;
 
-	border-top: 10px solid #ffa949 ;
+	border-top: 10px solid #ffa949;
+
+	/*margin-top: 105px;
+	margin-right: 0;
+	margin-bottom: 60px;
+	margin-left: 0;*/
+
+	margin: 105px 0 60px;
 }
 
 ol li {
