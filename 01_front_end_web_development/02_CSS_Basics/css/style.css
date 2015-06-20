@@ -8,7 +8,7 @@ body {
 
 h1 {
 	font-size: 5.625rem; /* 90px / 16px */
-	color: white;
+	color: rgba(255, 255, 255, .5);
 }
 
 h2 {
@@ -23,7 +23,7 @@ h3 {
 /* Pseudo - Classes */
 
 a:link {
-	color: orange;
+	color: rgb(255, 169, 73);
 }
 
 a:visited {
@@ -31,7 +31,7 @@ a:visited {
 }
 
 a:hover {
-	color: forestgreen;
+	color: rgba(255, 169, 73, .4);
 }
 
 a:active {
@@ -48,18 +48,18 @@ a:active {
 #main-footer {
 	padding-top: 60px;
 	padding-bottom: 60px;
-	border-bottom: solid 10px orange;
+	border-bottom: solid 10px #ffa949;
 }
 
 /* Class Selectors */
 
 .main-header {
-	background-color: orange; /* This makes our header bg header orange */
+	background-color: #ffa949; /* This makes our header bg header orange */
 }
 
 .title  {
 	color: white;
-	font-size: 1.625rem; /* 26px/16px
+	font-size: 1.625rem; /* 26px/16px */
 }
 
 .primary-content, 
