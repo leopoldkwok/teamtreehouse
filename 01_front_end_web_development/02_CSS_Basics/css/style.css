@@ -143,8 +143,27 @@ a:active {
 	margin-left: 0;*/
 
 	margin: 105px 0 60px;
+
+	background: url('../img/bear.jpg') no-repeat center;
+  	background-size: cover;
+  	box-sizing: border-box;
 }
 
 .arrow {
 	width: 50px;
+}
+
+/* Floated columns ----------------------------- */
+
+.resorts, 
+.tips {
+	width: 46.5%;
+}
+
+.tips {
+	float: right;
+}
+
+.resorts {
+	float: left;
 }
