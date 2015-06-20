@@ -63,6 +63,8 @@ a:active {
 
 .main-header {
 	background-color: #ffa949; /* This makes our header bg header orange */
+	padding-top: 170px;
+	height: 850px;
 }
 
 .title  {
@@ -110,14 +112,11 @@ a:active {
 
 .primary-content, 
 .secondary-content {
-	width: 60%;
+	width: 860px;
+	padding-left: 50px;
+	padding-right: 50px;
 	margin: auto;
 }
-
-
-
-
-
 
 .wildlife {
 	color: white;
@@ -131,6 +130,10 @@ a:active {
 	margin-left: 0;*/
 
 	margin: 105px 0 60px;
+}
+
+.arrow {
+	width: 50px;
 }
 
 ol li {
