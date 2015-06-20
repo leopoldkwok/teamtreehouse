@@ -1,11 +1,8 @@
-
-
-
-
 /* Class Selectors */
 
 .main-header {
 	background-color: orange; /* This makes our header bg header orange */
+	width: 960px;
 }
 
 .title  {
