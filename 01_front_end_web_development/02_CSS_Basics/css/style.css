@@ -67,12 +67,11 @@ a:active {
 /* Main Styles ****/
 
 .main-header {
-	background-color: #ffa949; /* This makes our header bg header orange */
 	padding-top: 170px;
 	height: 850px;
-	background-image: url('../img/mountains.jpg');
-	background-size: 40%;
-	background-repeat: no-repeat;
+
+	background: #ffa949 url('../img/mountains.jpg') no-repeat center; 
+	background-size: cover;
 }
 
 .title  {
