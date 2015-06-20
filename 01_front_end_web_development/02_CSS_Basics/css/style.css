@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-	font-size: 5.625em; /* 90px / 16px */
+	font-size: 5.625rem; /* 90px / 16px */
 	color: white;
 }
 
@@ -55,12 +55,11 @@ a:active {
 
 .main-header {
 	background-color: orange; /* This makes our header bg header orange */
-	font-size: 2em;
 }
 
 .title  {
 	color: white;
-	font-size: 1.625em; /* 26px/16px
+	font-size: 1.625rem; /* 26px/16px
 }
 
 .primary-content, 
