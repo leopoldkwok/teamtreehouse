@@ -83,7 +83,8 @@ a:active {
 
 	background: #ffa949 url('../img/mountains.jpg') no-repeat center; 
 	background-size: cover;
-	box-shadow: 0 2px 15px #aaa, inset 0 0 60px 5px firebrick;
+	
+	background-image: radial-gradient(circle at top right, #ffa949, firebrick);
 }
 
 .title  {
