@@ -36,6 +36,7 @@ h3 {
 img {
 	max-width: 100%;
 	margin-bottom: 20px;
+	border-radius: 10px;
 }
 
 ul,
@@ -82,11 +83,13 @@ a:active {
 
 	background: #ffa949 url('../img/mountains.jpg') no-repeat center; 
 	background-size: cover;
+	box-shadow: 0 2px 15px #aaa, inset 0 0 60px 5px firebrick;
 }
 
 .title  {
 	color: white;
 	font-size: 1.625rem; /* 26px/16px */
+	text-shadow: 1px 3px 0 #e59740;
 }
 
 .intro {
@@ -131,6 +134,10 @@ a:active {
 	border-top: 2px solid lightgrey;
 }
 
+.main-heading {
+  text-shadow: 0 0 5px #be7b31;
+}
+
 /* Layout Styles ----------------------------- */
 
 .primary-content, 
@@ -150,7 +157,9 @@ a:active {
 	margin: 105px 0 60px;
 	background: #434a52 url('../img/bear.jpg') no-repeat center;
   	background-size: cover;
-  	box-shadow: inset 0 0 50px 10px rgba(0,0,0, 1);
+  	box-shadow: inset 0 0 50px 10px rgba(0,0,0, .8);
+
+  	border-radius: 10px;
 }
 
 .arrow {
