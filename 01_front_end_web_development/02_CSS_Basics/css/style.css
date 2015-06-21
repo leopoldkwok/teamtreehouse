@@ -37,6 +37,15 @@ img {
 	margin-bottom: 20px;
 }
 
+ul,
+ol {
+	margin: 30px 0;
+}
+
+li {
+	margin-bottom: 10px;
+}
+
 /*
 li {
 	display: inline-block;
