@@ -179,7 +179,7 @@ a:active {
 	margin: 105px 0 60px;
 	background: #434a52 url('../img/bear.jpg') no-repeat center;
   	background-size: cover;
-  	box-shadow: inset 0 0 50px 10px rgba(0,0,0, .8);
+  	box-shadow: inset 0 0 50px 10px rgba(0,0,0, .8);@
 
   	border-radius: 10px;
 }
@@ -212,3 +212,27 @@ a:active {
 	display: table;
 	clear: both; /* clears any collapsed space */
 }
+
+/* Media Queries -------------------------------- */
+@media (max-width: 960px) {
+	body {
+		background: royalblue;
+	}
+	
+}
+
+@media (max-width: 480px) {
+	body {
+		background: darkred;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 700px) {
+	body {
+		background: seagreen;
+	}
+	p {
+		color: white;
+	}
+}
+
