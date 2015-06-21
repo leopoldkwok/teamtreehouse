@@ -144,20 +144,13 @@ a:active {
 
 .wildlife {
 	color: white;
-	background-color: #434a52;
+	text-align: left;
 	padding: 18% 24%;
 	border-top: 10px solid #ffa949;
-
-	/*margin-top: 105px;
-	margin-right: 0;
-	margin-bottom: 60px;
-	margin-left: 0;*/
-
 	margin: 105px 0 60px;
-
-	background: url('../img/bear.jpg') no-repeat center;
+	background: #434a52 url('../img/bear.jpg') no-repeat center;
   	background-size: cover;
-  	box-sizing: border-box;
+  	box-shadow: inset 0 0 50px 10px rgba(0,0,0, 1);
 }
 
 .arrow {
