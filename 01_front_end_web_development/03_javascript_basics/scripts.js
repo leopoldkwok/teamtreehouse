@@ -1,4 +1,2 @@
-var message = "Hello!";
-alert(message);
-message = "Welcome to Javascript Basics";
-alert(message);
+var visitorName = prompt('What is your name?');
+console.log(visitorName);
