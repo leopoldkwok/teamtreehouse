@@ -1,4 +1,4 @@
-name = "Jason"
+print "Please enter your name: "
+name = gets
 
-puts "Hello"
-puts name
+puts "Hello #{name}!"
