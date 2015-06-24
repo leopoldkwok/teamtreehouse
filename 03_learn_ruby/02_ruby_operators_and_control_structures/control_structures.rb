@@ -7,12 +7,17 @@ else
 	puts "Hi #{name}!"
 end	
 
-print "Would you like to see your name backwards? (yes or no)"
+print "Modify your name. Type 'uppercase' or 'reverse': "
 answer = gets.chomp.downcase
 
-if answer == "yes"
+if answer == "reverse"
 	puts "This is your name backwards:"
 	puts name.reverse
+elsif answer == "uppercase"
+	puts "This is your name in all uppercase letters:"
+	puts name.upcase
+elsif answer == "both"
+	puts name.reverse.upcase
 else
 	puts "Ok, maybe later."
 end
