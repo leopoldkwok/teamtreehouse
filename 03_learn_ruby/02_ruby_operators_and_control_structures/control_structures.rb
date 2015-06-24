@@ -7,7 +7,7 @@ else
 	puts "Hi #{name}!"
 end	
 
-print "Modify your name. Type 'uppercase' or 'reverse': "
+print "Modify your name. Type 'uppercase' or 'reverse' or 'both': "
 answer = gets.chomp.downcase
 
 if answer == "reverse"
