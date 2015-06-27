@@ -17,8 +17,20 @@ def add_list_item
 	return hash
 end
 
+def print_list(list)
+	puts "List:#{list['name']}"
+	puts "----"
+
+	list["items"].each do |item|
+		puts "Item: " + item['name']
+		puts "Quantity: " + item['quantity'].to_s
+		puts "----"
+	end
+end
+
 list = create_list()
 puts list.inspect
 list['items'].push(add_list_item())
 
 puts list.inspect
+print_list(list)
