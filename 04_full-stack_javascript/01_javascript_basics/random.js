@@ -1,7 +1,18 @@
-function getRandomNumber(upper) {
-	var randomNumber = Math.floor(Math.random() * upper) + 1;
-	return randomNumber;
+function getRandomNumber(lower, upper) {
+	return Math.floor(Math.random() * (upper - lower + 1)) + lower;
 }
+
+console.log(getRandomNumber(1,6));
+console.log(getRandomNumber(1,100));
+console.log(getRandomNumber(200, 500));
+console.log(getRandomNumber(1000, 20000));
+console.log(getRandomNumber(50, 100));
+
+
+// function getRandomNumber(upper) {
+// 	var randomNumber = Math.floor(Math.random() * upper) + 1;
+// 	return randomNumber;
+// }
 
 
 
@@ -14,9 +25,9 @@ function getRandomNumber(upper) {
 // console.log(getRandomNumber());
 // var dieRoll = getRandomNumber();
 
-function getArea(width, length, unit) {
-	var area = width * length;
-	return area + " " + unit;
-}
+// function getArea(width, length, unit) {
+// 	var area = width * length;
+// 	return area + " " + unit;
+// }
 
-console.log(getArea(10, 20, 'sq ft'));
+// console.log(getArea(10, 20, 'sq ft'));
