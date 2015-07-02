@@ -4,7 +4,7 @@ function randomNumber(upper) {
 
 
 var counter = 0;
-while (counter < 10000) {
+while (counter < 10) {
 	var randNum = randomNumber(6);
 	document.write(randNum + ' ');
 	counter += 1;
