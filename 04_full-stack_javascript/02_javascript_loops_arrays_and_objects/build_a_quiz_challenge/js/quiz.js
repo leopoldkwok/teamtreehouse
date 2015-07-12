@@ -13,7 +13,8 @@ var response;
 var html;
 
 function print(message) {
-	document.write(message);
+	var outputDiv = document.getElementById('output');
+	outputDiv.innerHTML = message;
 }
 
 for (var i = 0; i < questions.length; i += 1) {
