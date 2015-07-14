@@ -1,0 +1,24 @@
+body {
+  background: #2d3339
+}
+.warning {
+  border: 5px solid #e1dfbe;
+  width: 200px;
+  margin: 100px auto 20px;
+  border-radius: 5px;
+  padding: 20px 10px;
+  text-align: center;
+  font-size: 32px
+}
+.warning span {
+  color: #f4f3ce;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.image {
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  text-align: center;
+  z-index: -1
+}
