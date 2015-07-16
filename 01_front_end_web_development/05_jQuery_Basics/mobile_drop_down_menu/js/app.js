@@ -2,14 +2,32 @@
 //Solution: To hide the text links and swap them out with a more appropriate navigation
 
 //Create a select and append to menu
+var $select = $("<select></select>");
+$("#menu").append($select);
 //Cycle over menu links
+$("#menu a").each(function() {
+
+  var $anchor = $(this);
   // Create an option
-  //Option's value is the href
-  // option's text is the text of links
+  var $option = $("<option></option>");
+
+  //Options value is the href
+  $option.val($anchor.attr("href"));
+
+  // options text is the text of link
+//   var anchorText = $anchor.text();
+ $option.text(anchor.text());
+
+
+  // $option.text($anchor.text());
+  
   // append option to select
+  $select.append($option);
+});
+
 //Create button 
   //Bind click to button 
-  //go to select's location
+  //go to selects location
 // Modify CSS to hide links on small width and show button and select 
-  // Also hides select and button on larger width and show's links
+  // Also hides select and button on larger width and shows links
   // Deal with selected options depending on current page
