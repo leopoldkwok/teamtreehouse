@@ -6,20 +6,46 @@ var addButton = document.getElementsByTagName("button")[0]; //first button
 var incompleteTasksHolder =document.getElementById("incomplete-tasks"); //unordered list #incomplete-tasks
 var completedTasksHolder =document.getElementById("completed-tasks"); // #completed-tasks
 
-var addTask = function () {
-  console.log("add task")
+//New Task List Item
+var createNewTaskElement = function(taskString) {
+	//Create List Item
+	var listItem = document.createElement("li");
 
+	//input (checkbox)
+	var checkbox = document.createElement("input"); //checkbox
+	//label
+	var label = document.createElement("label");
+	//input (text)
+	var editInput = document.createElement("input"); // text 
+	//button.edit
+	var editButton = document.createElement("button");
+	//button.delete
+	var deleteButton = document.createElement("button");
+	
+		//Each element needs modifying
 
-  //When the button is pressed
-  //Create a new list item with the text from #new-task:
-    //input (checkbox)
-    //label
-    //input (text) when we edit the task
-    //button .edit
-    //button .delete
-    //Each element will need to be modified and appended
+	//Each element needs appending
+	listItem.appendChild(checkbox);
+	listItem.appendChild(label);
+	listItem.appendChild(editInput);
+	listItem.appendChild(editButton);
+	listItem.appendChild(deleteButton);
+
+	return listItem;
+
 }
 
+//Add a new task
+var addTask = function() {
+	console.log("Add task...");
+	// Create a new list item from the text from #new-task:
+	var listItem = createNewTaskElement("Some New Task");	
+	//Append listItem to incompleteTasksHolder	
+	incompleteTasksHolder.appendChild(listItem);
+	bindTaskEvents(listItem, taskCompleted);
+}
+
+//Edit an existing task
 var editTask = function() {
     console.log("edit task")
 
@@ -36,27 +62,29 @@ var editTask = function() {
 }
 
 var deleteTask = function() {
-    console.log("delete task")
-
-//Delete an existing task
-  //When the delete button is pressed
+    console.log("delete task");
+    
+    var listItem = this.parentNode;
+    var ul = listItem.parentNode;
+    
     //Remove the parent list item from the unordered list
+    ul.removeChild(listItem);
 }
 
 var taskCompleted = function() {
-    console.log("complete task")
-
-//Mark a task as complete
-  //When the checkbox is checked
+    console.log("Task Complete...")
     //Append the task list item to the #completed-tasks
+    var listItem = this.parentNode
+    completedTasksHolder.appendChild(listItem);
+    bindTaskEvents(listItem, taskIncomplete)
 }
 
 var taskIncomplete = function() {
     console.log("incomplete task")
-
-//Mark a task as incomplete
-  //When the checkbox is unchecked
     //append the task list item to the #incomplete-tasks
+    var listItem = this.parentNode
+    incompleteTasksHolder.appendChild(listItem);
+    bindTaskEvents(listItem, taskCompleted);
 }
 
 //WIRING
