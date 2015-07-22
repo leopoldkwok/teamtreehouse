@@ -14,6 +14,7 @@ var completedTasksHolder = document.getElementById("completed-tasks"); //complet
 
 //function above is the same as below
 var addTask = function() {
+	console.log("Add task...");
 	// When the button is pressed
 	// Create a new list item from the text from #new-task:
 		//input (checkbox)
@@ -26,6 +27,7 @@ var addTask = function() {
 
 // Edit an existing task
 var editTask = function() {
+	console.log("Edit task...");
 	//When the edit button is pressed 
 	//if the class of the parent is .editMode
 		//Switch from .editMode
@@ -39,18 +41,24 @@ var editTask = function() {
 
 // Delete an existing task
 var deleteTask = function() {
+	console.log("Delete task...");
 	//When the delete button is pressed 
 		//Remove the parent list item from the ul 
 
 }
 // Mark a task as complete
 var taskCompleted = function() {
+	console.log("Task Complete...");
 	//When the Checkbox is checked
 		//Append the task list item to the #completed tasks
 
 }
 // Mark a task as incomplete
 var taskIncomplete = function() {
+	console.log("Task Incomplete...");
 	//When the checkbox is unchecked
 	//Append the task list item to the #incompleted tasks
 }
+
+//Set the click handler to the addTask function
+addButton.onclick = addTask;
