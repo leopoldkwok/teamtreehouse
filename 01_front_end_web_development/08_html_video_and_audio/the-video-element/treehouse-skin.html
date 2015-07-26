@@ -43,6 +43,7 @@
     		success: function(player, node) {
     			$('#' + node.id + '-mode').html('mode: ' + player.pluginType);
     		},
+    		features:['playerpause', 'tracks', 'progress'],
     		startlanguage: 'en',
     		translationSelector: true
     	});

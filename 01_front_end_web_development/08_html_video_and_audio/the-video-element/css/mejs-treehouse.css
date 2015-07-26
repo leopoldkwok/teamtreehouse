@@ -25,3 +25,24 @@
 	height: 100%;
 	border-radius: 0px;
 }
+
+.mejs-treehouse .mejs-controls .mejs-time-rail .mejs-time-total, 
+.mejs-treehouse .mejs-controls .mejs-time-rail .mejs-time-loaded, 
+.mejs-treehouse .mejs-controls .mejs-time-rail .mejs-time-buffering, 
+.mejs-treehouse .mejs-controls .mejs-time-rail .mejs-time-handle {
+	background: #2d3339;
+	margin: 0;
+} 
+
+.mejs-treehouse .mejs-controls .mejs-time-rail .mejs-time-current {
+	background: #ff9900;
+}
+
+.mejs-container .mejs-controls .mejs-time-rail .mejs-time-total .mejs-time-float {
+	border: none;
+	background: none;
+	text-shadow: 0px 1px 2px rgba(0,0,0,0.8);
+	font-family: Helvetica, Arial;
+	font-size: 13px;
+	color: #FFF;
+}
