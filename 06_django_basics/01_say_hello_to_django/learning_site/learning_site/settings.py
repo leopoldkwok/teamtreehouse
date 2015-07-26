@@ -86,7 +86,7 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
-LANGUAGE_CODE = 'America/Los_Angeles'
+LANGUAGE_CODE = 'en-gb'
 
 TIME_ZONE = 'UTC'
 
