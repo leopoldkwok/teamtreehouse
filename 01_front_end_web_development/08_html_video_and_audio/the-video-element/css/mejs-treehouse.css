@@ -1,0 +1,27 @@
+.mejs-treehouse .mejs-controls {
+	background: rgba(56, 64, 71, 0.98);
+	height: 30px;
+}
+
+.mejs-treehouse .mejs-controls .mejs-button button {
+	outline: none;
+}
+
+.mejs-treehouse .mejs-controls .mejs-captions-button {
+	margin: 0 7px;
+}
+
+.mejs-treehouse .mejs-controls .mejs-captions-selector {
+	background: rgba(56, 64, 71, 0.98);
+	width: 100px;
+	right: auto;
+}
+
+.mejs-treehouse .mejs-controls .mejs-time-rail {
+	padding: 0;
+}
+
+.mejs-treehouse .mejs-controls .mejs-time-rail span {
+	height: 100%;
+	border-radius: 0px;
+}
