@@ -10,6 +10,9 @@
   <script>
     function sendAJAX() {
       $('#ajax').load('sidebar.html');
+      // $.get('sidebar.html', function(response){
+      //   $('#ajax').html(response);
+      // }); //jquery get method to do the same thing as load as above.
       $('#load').hide();
     
     }
