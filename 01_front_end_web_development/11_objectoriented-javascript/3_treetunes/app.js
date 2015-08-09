@@ -9,6 +9,7 @@ playlist.add(hereComesTheSun);
 playlist.add(walkingOnSunshine);
 
 playlist.add(manOfSteel);
+
 var playlistElement = document.getElementById("playlist");
 
 playlist.renderInElement(playlistElement);

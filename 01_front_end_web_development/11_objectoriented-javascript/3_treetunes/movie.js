@@ -16,7 +16,7 @@ Movie.prototype.toHTML = function() {
 	htmlString += ' (';
 	htmlString += this.year;
 	htmlString += ' ) ';
-	htmlString += '<span class="duration">'
+	htmlString += '<span class="duration">';
 	htmlString += this.duration;
 	htmlString += '</span></li>';
 	return htmlString;
