@@ -11,7 +11,9 @@ layout: default
         <b class="post__date">{{ page.date | date: "%b %-d, %Y" }}</b>
       </div>
     </header>
-
+    {% if page.image %}
+    <img class="feat-img is-hidden-mobile" src="/img/{{ page.image }}">
+    {% endif %}
     <article class="post__content">
       {{ content }}
     </article>   

@@ -5,6 +5,7 @@ date:   2015-04-29 09:45:36
 categories: conferences
 author: Guil Hernandez
 permalink: camp-sass
+image: camp-sass.jpg
 ---
 
 Camp Sass is a one-day, one-track Sass conference held in Atlanta, GA. It's
