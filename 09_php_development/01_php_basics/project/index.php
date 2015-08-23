@@ -1,8 +1,14 @@
 <?php
 
+// This is my first name
 $name = "Mike";
+
 $location = "Orlando, FL";
-$full_name = "Mike The Frog";
+
+// This is my full name of Welsh Origin
+$full_name = "Hampton Paulk";
+
+// Use full name as your name
 $name = $full_name;
 
 ?>
