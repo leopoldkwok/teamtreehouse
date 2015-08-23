@@ -37,7 +37,18 @@ $name = $full_name;
     </section>
     <section class="main">
       <p>Let's Get Started!</p>
-      <p><?php echo "Hello, World!" ?></p>
+      <pre>
+        <?php 
+          $names = array(
+                      'chris',
+                      'mike',
+                      'amy',
+                      'jane'
+                );
+
+          print_r($names);
+        ?>
+      </pre>
     </section>
   </body>
 </html>
