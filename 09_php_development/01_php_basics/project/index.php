@@ -1,18 +1,27 @@
+<?php
+
+$name = "Mike";
+$location = "Orlando, FL";
+$full_name = "Mike The Frog";
+$name = $full_name;
+
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
-  	<meta charset=utf-8>
-  	<title>Mike The Frog | Treehouse Profile</title>
-  	<link href="css/style.css" rel="stylesheet" />
+    <meta charset=utf-8>
+    <title><?php echo $name ?> | Treehouse Profile</title>
+    <link href="css/style.css" rel="stylesheet" />
   </head>
   
   <body>
     <section class="sidebar text-center">
       <div class="avatar">
-        <img src="img/avatar.png" alt="Mike The Frog">
+        <img src="img/avatar.png" alt="<?php echo $name ?> ">
       </div>
-      <h1>Mike Frog</h1>
-      <p>Portland, OR</p>
+      <h1><?php echo $name ?></h1>
+      <p><?php echo $location ?></p>
       <hr />
       <p>Welcome to PHP Basics!</p>
       <hr />
