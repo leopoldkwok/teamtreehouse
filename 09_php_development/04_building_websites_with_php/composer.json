@@ -1,0 +1,12 @@
+{
+    "name": "leopoldkwok/04_building_websites_with_php",
+    "authors": [
+        {
+            "name": "Leopold Kwok",
+            "email": "leopoldkwok@gmail.com"
+        }
+    ],
+    "require": {
+        "monolog/monolog": "^1.16"
+    }
+}
