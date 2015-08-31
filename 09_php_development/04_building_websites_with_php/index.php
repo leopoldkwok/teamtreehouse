@@ -11,7 +11,18 @@ date_default_timezone_set('Europe/London');
 //
 //echo 'Hello World!';
 
-$app = new \Slim\Slim();
+$app = new \Slim\Slim(array(
+  'view' => new \Slim\Views\Twig()
+));
+
+$view->parserOptions = array(
+    'debug' => true
+);
+
+$view->parserExtensions = array(
+    new \Slim\Views\TwigExtension(),
+);
+
 
 $app->get('/',function() use($app){
   $app->render('index.html');
