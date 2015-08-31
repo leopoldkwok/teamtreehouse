@@ -1,4 +1,11 @@
+
+
 <?php
+
+ini_set('display_errors',1);
+ini_set('display_startup_errors',1);
+error_reporting(-1);
+
 require 'vendor/autoload.php';
 date_default_timezone_set('America/New_York');
 
@@ -40,16 +47,27 @@ $app->post('/contact', function() use($app){
     $app->redirect('/contact');
   }
   
-  $transport = Swift_SendMailTransport::newInstance('/usr/sbin/sendmail -bs');
+  $transport = Swift_SendmailTransport::newInstance('/usr/sbin/sendmail -bs');
   $mailer = \Swift_Mailer::newInstance($transport);
   
   $message = \Swift_Message::newInstance();
   $message->setSubject('Email From Our Website');
   $message->setFrom(array(
-    $cleanName => $cleanEmail
+   $cleanEmail => $cleanName
   ));
   $message->setTo(array('treehouse@localhost'));
   $message->setBody($cleanMsg);
+  
+  $result = $mailer->send($message);
+  
+  if($result > 0) {
+    // send a message that says thank you.
+    $app->redirect('/');
+  } else {
+    // send message to the user that the message failed to send
+    //log that there was an error
+    $app->redirect('/contact');
+  }
   
 });
 
