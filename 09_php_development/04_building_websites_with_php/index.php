@@ -25,11 +25,11 @@ $view->parserExtensions = array(
 
 
 $app->get('/',function() use($app){
-  $app->render('index.html');
+  $app->render('about.twig');
 });
 
 $app->get('/contact',function() use($app){
-  $app->render('contact.html');
+  $app->render('contact.twig');
 });
 
 $app->run();
