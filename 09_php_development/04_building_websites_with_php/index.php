@@ -39,6 +39,18 @@ $app->post('/contact', function() use($app){
     // message the user that there was a problem
     $app->redirect('/contact');
   }
+  
+  $transport = Swift_SendMailTransport::newInstance('/usr/sbin/sendmail -bs');
+  $mailer = \Swift_Mailer::newInstance($transport);
+  
+  $message = \Swift_Message::newInstance();
+  $message->setSubject('Email From Our Website');
+  $message->setFrom(array(
+    $cleanName => $cleanEmail
+  ));
+  $message->setTo(array('treehouse@localhost'));
+  $message->setBody($cleanMsg);
+  
 });
 
 $app->run();
