@@ -27,7 +27,16 @@ $app->get('/contact', function() use($app){
 })->name('contact');
 
 $app->post('/contact', function() use($app){
-  var_dump($app->request->post());
+  $name = $app->request->post('name');
+  $email = $app->request->post('email');
+  $msg = $app->request->post('msg');
+  
+  if(!empty($name) && !empty($email) && !empty($msg)) {
+  
+  } else {
+    // message the user that there was a problem
+    $app->redirect('/contact');
+  }
 });
 
 $app->run();
