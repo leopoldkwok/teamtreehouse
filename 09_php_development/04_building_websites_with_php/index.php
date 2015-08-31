@@ -13,8 +13,12 @@ date_default_timezone_set('Europe/London');
 
 $app = new \Slim\Slim();
 
-$app->get('/hello/:name', function ($name) {
-    echo "Hello, $name";
+$app->get('/',function() use($app){
+  $app->render('index.html');
+});
+
+$app->get('/contact',function() use($app){
+  $app->render('contact.html');
 });
 
 $app->run();
