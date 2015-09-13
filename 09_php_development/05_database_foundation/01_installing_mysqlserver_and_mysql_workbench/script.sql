@@ -35,3 +35,18 @@ create database if not exists movie_db_2;
 create table actors (name varchar(50)NOT NULL);
 
 create table movies (title varchar(200) NOT NULL, year INTEGER NULL)ENGINE InnoDB;
+
+insert into movies (title, year) values("Avatar", 2009);
+
+insert into movies (year, title) values( 2009, "Avatar"), (NULL,"Avatar 2");
+
+insert into movies SET title="Back to the Future", year = 1985;
+
+select * from movies
+
+set sql_safe_updates = 1;
+update movies set year=2015 where title="Avatar 2";
+update movies set year=2016, title="Avatar Reloaded" where title="Avatar 2";
+
+delete from movies where title="Avatar Reloaded" and year =2016;
+
