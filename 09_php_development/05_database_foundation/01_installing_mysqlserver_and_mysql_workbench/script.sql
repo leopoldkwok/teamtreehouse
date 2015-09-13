@@ -32,3 +32,6 @@ create schema if not exists movie_db_1;
 
 create database if not exists movie_db_2;
 
+create table actors (name varchar(50)NOT NULL);
+
+create table movies (title varchar(200) NOT NULL, year INTEGER NULL)ENGINE InnoDB;
