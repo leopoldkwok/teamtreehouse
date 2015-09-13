@@ -50,3 +50,8 @@ update movies set year=2016, title="Avatar Reloaded" where title="Avatar 2";
 
 delete from movies where title="Avatar Reloaded" and year =2016;
 
+rename table movies to movie_table, actors to actor_table;
+
+drop table if exists reviews;
+
+truncate actor_table;
