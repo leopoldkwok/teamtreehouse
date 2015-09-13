@@ -14,3 +14,11 @@ select * from movies order by year ASC;
 
 select * from movies order by year ASC, title DESC;
 
+select * from movies limit 10;
+
+select * from movies limit 10 offset 10;
+
+select * from movies limit 20 offset 10;
+
+
+
