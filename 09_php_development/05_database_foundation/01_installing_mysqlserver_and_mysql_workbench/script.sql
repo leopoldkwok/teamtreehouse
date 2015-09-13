@@ -26,3 +26,9 @@ select * from movies order by year;
 
 select * from movies where year is not null order by year;
 
+use movie_db_1;
+
+create schema if not exists movie_db_1;
+
+create database if not exists movie_db_2;
+
