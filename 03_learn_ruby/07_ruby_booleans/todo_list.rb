@@ -12,5 +12,9 @@ end
 todo_list = TodoList.new("Groceries")
 todo_item = TodoItem.new("milk")
 
-puts todo_list.inspect
-puts todo_item.inspect
+puts todo_item
+todo_item.mark_complete!
+puts todo_item
+todo_item.mark_incomplete!
+puts todo_item
+
