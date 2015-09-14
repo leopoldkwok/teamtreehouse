@@ -66,3 +66,11 @@ ALTER TABLE actor_table change column dob date_of_birth date;
 ALTER TABLE movie_table change year year_released YEAR;
 
 ALTER TABLE actor_table DROP date_of_birth; 
+
+DROP DATABASE movie_db_3;
+
+DROP SCHEMA movie_db_3;
+
+DROP SCHEMA IF EXISTS movie_db_2;
+
+ 
