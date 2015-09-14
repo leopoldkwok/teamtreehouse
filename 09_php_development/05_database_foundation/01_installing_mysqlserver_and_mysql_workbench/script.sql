@@ -55,3 +55,14 @@ rename table movies to movie_table, actors to actor_table;
 drop table if exists reviews;
 
 truncate actor_table;
+
+ALTER TABLE movie_table ADD column genre varchar(100);
+
+ALTER TABLE actor_table ADD (pob varchar(100), dob date);
+
+ALTER TABLE actor_table change column pob place_of_birth varchar(100);
+ALTER TABLE actor_table change column dob date_of_birth date;
+
+ALTER TABLE movie_table change year year_released YEAR;
+
+ALTER TABLE actor_table DROP date_of_birth; 
