@@ -98,3 +98,17 @@ update movies SET genre_id = 1 where id= 8 or id =9;
 
 select * from movies;
 
+
+SELECT * FROM movies LEFT OUTER JOIN genres ON movies.genre_id = genres.id;
+
+SELECT * FROM movies RIGHT OUTER JOIN genres ON movies.genre_id = genres.id;
+
+SELECT movies.title AS movie_title, genres.name AS genre_name 
+FROM movies LEFT OUTER JOIN genres 
+ON movies.genre_id = genres.id
+WHERE name IS NOT NULL;
+
+SELECT movies.title AS movie_title, genres.name AS genre_name 
+FROM movies LEFT OUTER JOIN genres 
+ON movies.genre_id = genres.id
+WHERE genres.id = 1;
