@@ -73,4 +73,28 @@ DROP SCHEMA movie_db_3;
 
 DROP SCHEMA IF EXISTS movie_db_2;
 
- 
+use treehouse_movie_db;
+
+CREATE TABLE genres (id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY, name VARCHAR(30) NOT NULL UNIQUE KEY);
+
+INSERT INTO genres (name) VALUES("Sci Fi");
+INSERT INTO genres (name) VALUES("Muscial");
+INSERT INTO genres (name) VALUES("Action");
+
+select * from genres;
+
+select * from movies;
+
+alter table movies add column id INTEGER AUTO_INCREMENT PRIMARY KEY FIRST;
+
+alter table movies 
+add column genre_id INTEGER NULL, 
+ADD CONSTRAINT FOREIGN KEY(genre_id) REFERENCES genres(id);
+
+select * from movies;
+select * from genres;
+
+update movies SET genre_id = 1 where id= 8 or id =9;
+
+select * from movies;
+
