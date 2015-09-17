@@ -75,7 +75,8 @@ DROP SCHEMA IF EXISTS movie_db_2;
 
 use treehouse_movie_db;
 
-CREATE TABLE genres (id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY, name VARCHAR(30) NOT NULL UNIQUE KEY);
+CREATE TABLE genres (id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+ name VARCHAR(30) NOT NULL UNIQUE KEY);
 
 INSERT INTO genres (name) VALUES("Sci Fi");
 INSERT INTO genres (name) VALUES("Muscial");
@@ -112,3 +113,29 @@ SELECT movies.title AS movie_title, genres.name AS genre_name
 FROM movies LEFT OUTER JOIN genres 
 ON movies.genre_id = genres.id
 WHERE genres.id = 1;
+
+
+
+use treehouse_movie_db
+
+SELECT * FROM movies LIMIT 1;
+
+select * from reviews where movie_id = 1;
+
+select count(*) from reviews where movie_id = 1;
+
+select count(id) from reviews where movie_id = 1;
+ 
+select count(id) as review_count from reviews where movie_id = 1;
+
+select min(score) as minimum_score from reviews where movie_id = 1;
+
+select min(score) as minimum_score, max(score) as maximum_score from reviews where movie_id = 1;
+
+select min(score) as minimum_score, max(score) as maximum_score, sum(score)  from reviews where movie_id = 1;
+
+select min(score) as minimum_score, max(score) as maximum_score, sum(score) + 1 from reviews where movie_id = 1;
+
+select min(score) as minimum_score, max(score) as maximum_score, sum(score) / count(score) as AVERAGE from reviews where movie_id = 1;
+
+select min(score) as minimum_score, max(score) as maximum_score, AVG(score) as average from reviews where movie_id = 1;
