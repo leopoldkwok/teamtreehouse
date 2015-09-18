@@ -220,3 +220,30 @@ CONCAT(SUBSTRING(lower(email),1, 10), "...") AS partial_email,
 length(username) as username_length 
 from users having username_length < 19;
 
+#user1 - read access
+
+GRANT SELECT 
+ON treehouse_movie_db.*
+TO user1@'%'
+IDENTIFIED BY 'password'; 
+
+FLUSH PRIVILEGES; /* resets and reloads all users privileges for this database' */
+
+#USER 2 - READ - WRITE ACCESS
+
+GRANT SELECT, INSERT, UPDATE, DELETE
+ON treehouse_movie_db.*
+TO user2@'%'
+IDENTIFIED BY 'password';
+
+FLUSH PRIVILEGES;
+
+#user 3 - DDL
+
+GRANT ALTER, CREATE, DROP
+ON treehouse_movie_db.*
+TO user3@'%'
+IDENTIFIED BY 'password';
+
+flush PRIVILEGES;
+
