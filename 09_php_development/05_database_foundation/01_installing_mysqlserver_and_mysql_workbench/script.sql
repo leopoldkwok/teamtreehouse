@@ -138,4 +138,58 @@ select min(score) as minimum_score, max(score) as maximum_score, sum(score) + 1 
 
 select min(score) as minimum_score, max(score) as maximum_score, sum(score) / count(score) as AVERAGE from reviews where movie_id = 1;
 
-select min(score) as minimum_score, max(score) as maximum_score, AVG(score) as average from reviews where movie_id = 1;
+select min(score) as minimum_score, 
+max(score) as maximum_score, 
+AVG(score) as average 
+from reviews where movie_id = 1;
+
+select min(score) as minimum_score, 
+max(score) as maximum_score, 
+AVG(score) as average 
+from reviews;
+
+select movie_id, min(score) as minimum_score, 
+max(score) as maximum_score, 
+AVG(score) as average 
+from reviews /* only displays the first record*/
+
+select movie_id, min(score) as minimum_score, 
+max(score) as maximum_score, 
+AVG(score) as average 
+from reviews group by movie_id;
+
+select title, min(score) as minimum_score, 
+max(score) as maximum_score, 
+AVG(score) as average 
+from movies join reviews 
+on movies.id = reviews.movie_id
+group by movie_id;
+
+select title, min(score) as minimum_score, 
+max(score) as maximum_score, 
+AVG(score) as average 
+from movies left outer join reviews 
+on movies.id = reviews.movie_id
+group by movie_id;
+
+select title, min(score) as minimum_score, 
+max(score) as maximum_score, 
+IFNULL(AVG(score),0) as average 
+from movies left outer join reviews 
+on movies.id = reviews.movie_id
+group by movie_id;
+
+select title, min(score) as minimum_score, 
+max(score) as maximum_score, 
+IFNULL(AVG(score),0) as average 
+from movies left outer join reviews 
+on movies.id = reviews.movie_id
+group by movie_id having average > 3; /* having is the where aggregate */
+
+select title, min(score) as minimum_score, 
+max(score) as maximum_score, 
+IFNULL(AVG(score),0) as average 
+from movies left outer join reviews 
+on movies.id = reviews.movie_id
+WHERE year_released > 2000
+group by movie_id having average > 3; 
