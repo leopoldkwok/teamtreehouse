@@ -193,3 +193,30 @@ from movies left outer join reviews
 on movies.id = reviews.movie_id
 WHERE year_released > 2000
 group by movie_id having average > 3; 
+
+select * from users;
+
+select first_name, last_name, email from users;
+
+select first_name, last_name, lower(email) from users;
+
+select first_name, upper(last_name), lower(email) from users;
+
+select first_name, 
+upper(last_name), lower(email), length(username) as username_length 
+from users having username_length < 19;
+
+select concat(first_name," ", upper(last_name)) as full_name, 
+lower(email), length(username) as username_length 
+from users having username_length < 19;
+
+select concat(first_name," ", upper(last_name)) as full_name, 
+SUBSTRING(lower(email),1, 10) AS partial_email, 
+length(username) as username_length 
+from users having username_length < 19;
+
+select concat(first_name," ", upper(last_name)) as full_name, 
+CONCAT(SUBSTRING(lower(email),1, 10), "...") AS partial_email, 
+length(username) as username_length 
+from users having username_length < 19;
+
