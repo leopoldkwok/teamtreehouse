@@ -247,3 +247,22 @@ IDENTIFIED BY 'password';
 
 flush PRIVILEGES;
 
+select * from movies;
+
+select * from users;
+
+
+select * from users where last_name = 'Chalkley';
+
+EXPLAIN select * from users where last_name = 'Chalkley';
+
+CREATE INDEX last_name_idx ON users(last_name);
+
+select * from users WHERE last_name = "Chalkley";
+
+EXPLAIN select * from users WHERE last_name = "Chalkley";
+
+INSERT INTO users (username, email, first_name, last_name)
+VALUES ("henry", "henry@email.com", "Henry","Chalkley");
+
+EXPLAIN select * from users WHERE first_name = "Andrew" AND last_name = "Chalkley";
