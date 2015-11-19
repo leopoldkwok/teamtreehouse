@@ -1,8 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    	<title>square gallery | Newsletter</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- forces a mobile devices browser to render the email in zoomed outscale -->
+        <title>square gallery | Newsletter</title>
         <style type="text/css">
                 /*////// RESET STYLES //////*/
             body, #bodyTable, #bodyCell{height:100% !important; margin:0; padding:0; width:100% !important;}
@@ -76,25 +77,48 @@
             @media only screen and (max-width: 480px) {
                 /*// RESET STYLES*/
                 td[id="introductionContainer"], td[id="callToActionContainer"], td[id="eventContainer"], td[id="merchandiseContainer"], td[id="footerContainer"]{padding-right: 10px !important; padding-left:10px !important;}
-                table[id="introductionBlock"], table[id="callToActionBlock"], table[id="eventBlock"], table[id="merchandiseBlock"], table[id="footerBlock"]{max-width: 480px !important; width: 100% !important; }
-
+                table[id="introductionBlock"], table[id="callToActionBlock"], table[id="eventBlock"], table[id="merchandiseBlock"], table[id="footerBlock"]{max-width: 480px !important; width: 100% !important; } /*resize content blocks and set a maxiumum width to them
+*/
            /* // CLIENT-SPECIFIC STYLES     */
 
             body{width:100% !important; min-width:100% !important;} /* Force iOS Mail to render the email at full width. */
 
+            /*GENERAL STYLES*/
+            h1{font-size: 34px !important;}
+            h2{font-size: 30px !important;}
+            h3{font-size: 24px !important;}
+
+            img[id="heroImage"]{height: auto !important; max-width: 520px !important; width: 100% !important;} /*image becomes fluid*/
+            td[class="introductionLogo"], td[class="introductionHeading"]{display:block !important;} /* items will stack on top of each other by using block elements*/
+            td[class="introductionHeading"]{padding: 40px 0 0 0 !important;}
+            td[class="introductionContent"]{padding-top: 20px !important;}
+
+            td[class="callToActionContent"]{text-align: left !important;}
+            table[class="callToActionButton"]{width: 100% !important;}
+
+            td[id="eventBlockCell"]{padding-right: 20px !important; padding-left: 20px !important;}
+            table[class="eventBlockCalendar"]{width: 100px !important;}
+
+            td[id="merchandiseBlockCell"]{padding-right: 20px !important; padding-left: 20px !important;}
+            td[class="merchandiseBlockHeading"] h2 {text-align: center !important;}
+            td[class="merchandiseBlockLeftColumn"], td[class="merchandiseBlockRightColumn"]{display: block !important; padding: 0 0 20px 0 !important; width: 100% !important;}
+
+            td[class="footerContent"]{font-size: 15px !important;}
+            td[class="footerContent"] a{display:block;}
+
             }
 
-		</style>
+        </style>
     </head>
     <body>
-    	<center>
-        	<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
-            	<tr>
-                	<td align="center" valign="top" id="bodyCell">
-                    	<!-- // BEGIN EMAIL -->
+        <center>
+            <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
+                <tr>
+                    <td align="center" valign="top" id="bodyCell">
+                        <!-- // BEGIN EMAIL -->
                         <table border="0" cellpadding="0" cellspacing="0" width="100%" id="emailContainer">
-                        	<tr>
-                            	<td align="center" valign="top" id="heroImageContainer">
+                            <tr>
+                                <td align="center" valign="top" id="heroImageContainer">
 
                                     <!-- // BEGIN HERO BLOCK -->
                                     <img src="img/in_the_conservatory.jpg" alt="In The Conservatory, by Édouard Manet" height="415" width="520" id="heroImage" />
@@ -102,8 +126,8 @@
 
                                 </td>
                             </tr>
-                        	<tr>
-                            	<td align="center" valign="top" id="introductionContainer">
+                            <tr>
+                                <td align="center" valign="top" id="introductionContainer">
 
                                     <!-- // BEGIN INTRO BLOCK -->
                                     <table border="0" cellpadding="0" cellspacing="0" width="520" id="introductionBlock">
@@ -133,8 +157,8 @@
 
                                 </td>
                             </tr>
-                        	<tr>
-                            	<td align="center" valign="top" id="callToActionContainer">
+                            <tr>
+                                <td align="center" valign="top" id="callToActionContainer">
 
                                     <!-- // BEGIN CALL-TO-ACTION BLOCK -->
                                     <table border="0" cellpadding="0" cellspacing="0" width="520" id="callToActionBlock">
@@ -161,8 +185,8 @@
 
                                 </td>
                             </tr>
-                        	<tr>
-                            	<td align="center" valign="top" id="eventContainer">
+                            <tr>
+                                <td align="center" valign="top" id="eventContainer">
 
                                     <!-- // BEGIN EVENT BLOCK -->
                                     <table border="0" cellpadding="0" cellspacing="0" width="600" id="eventBlock">
@@ -210,8 +234,8 @@
 
                                 </td>
                             </tr>
-                        	<tr>
-                            	<td align="center" valign="top" id="merchandiseContainer">
+                            <tr>
+                                <td align="center" valign="top" id="merchandiseContainer">
 
                                     <!-- // BEGIN MERCHANDISE BLOCK -->
                                     <table border="0" cellpadding="0" cellspacing="0" width="600" id="merchandiseBlock">
@@ -299,8 +323,8 @@
 
                                 </td>
                             </tr>
-                        	<tr>
-                            	<td align="center" valign="top" id="footerContainer">
+                            <tr>
+                                <td align="center" valign="top" id="footerContainer">
 
                                     <!-- // BEGIN FOOTER BLOCK -->
                                     <table border="0" cellpadding="0" cellspacing="0" width="600" id="footerBlock">
