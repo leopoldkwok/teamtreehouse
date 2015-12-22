@@ -1,0 +1,42 @@
+body {
+	background: #eee;
+}
+
+.blog {
+
+	> h1 {
+		color: red;
+		border: 1px solid red;
+	}
+
+	.entry {
+
+	h1 {
+		font-size: 20px;
+		color: blue;
+	}
+
+	p {
+		font-size: 12px;
+		margin: 20px;
+		html.csscolumns & {
+
+			column-count: 2;
+			column-gap: 10px;
+			margin: 10px;
+
+		}
+	}
+
+	a {
+		color: red;
+		&:hover {
+			color: blue;
+		}
+	}
+}
+
+
+}
+
+
