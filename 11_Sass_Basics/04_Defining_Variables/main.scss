@@ -1,0 +1,31 @@
+$primary-color: #369;
+$margin: 5px;
+$padding: $margin * 1.5;
+
+body {
+	background: $primary-color;
+	font-family: Futura, "Trebuchet MS", sans-serif;
+	> h1 {
+		font-size: 3em;
+		color: #eee;
+		margin: $margin 0 0 $margin;
+	}
+}
+
+.entry {
+	background: white;
+	margin: $margin;
+	padding: $padding;
+	h1 {
+		font-size: 1.2em;
+		margin: 0px;
+	}
+	.date {
+		font-size: 0.3em;
+		color: $primary-color;
+	}
+	a {
+		color: $primary-color;
+	}
+}
+
