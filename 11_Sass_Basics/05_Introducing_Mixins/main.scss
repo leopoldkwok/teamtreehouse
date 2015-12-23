@@ -1,12 +1,31 @@
+
+@mixin roundy {
+	border-radius: 4px;
+	border-top-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+
+}
+
+@mixin green_links {
+	a {
+		color: green;
+		&:hover {
+			color: blue;
+		}
+	}
+	h1 {
+		color: red;
+	}
+}
+
 .box {
-  border-radius: 4px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
+	@include roundy;
+	@include green_links;
+
 }
 
 // A whole bunch of other code
 .button {
-  border-radius: 4px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
+	@include roundy;
+	background: #345;
 }
