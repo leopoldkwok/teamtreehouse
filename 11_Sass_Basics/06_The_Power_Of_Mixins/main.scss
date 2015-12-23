@@ -1,0 +1,21 @@
+
+@mixin roundy($radius, $color) {
+	border-radius: $radius;
+	border-top-right-radius: $radius * 2;
+	border-bottom-left-radius: $radius * 2;
+	a {
+		color: $color;
+	}
+
+}
+
+.box {
+	@include roundy(4px, blue);
+
+}
+
+// A whole bunch of other code
+.button {
+	@include roundy(2px, red);
+	background: #345;
+}
