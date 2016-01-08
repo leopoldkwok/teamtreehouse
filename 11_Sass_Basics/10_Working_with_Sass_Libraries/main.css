@@ -1,7 +1,8 @@
 body {
-  background-color: red;
-  background-image: -webkit-linear-gradient(bottom, red, orange);
-  background-image: linear-gradient(to top,red, orange);
-  font-family: "Lucida Grande", "Tahoma", "Verdana", "Arial", sans-serif; }
+  background-color: #f00;
+  background-image: -webkit-linear-gradient(bottom, #f00, #ffa500);
+  background-image: linear-gradient(to top,#f00, #ffa500);
+  font-family: "Lucida Grande", "Tahoma", "Verdana", "Arial", sans-serif;
+}
 
 /*# sourceMappingURL=main.css.map */

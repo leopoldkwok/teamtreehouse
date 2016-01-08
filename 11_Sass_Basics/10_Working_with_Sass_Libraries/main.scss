@@ -1,7 +1,9 @@
-@import "bourbon/_bourbon.scss";
+@import 'bourbon/bourbon';
+$red:#f00;
+$orange:#ffa500;
 
 body {
-	@include linear-gradient(to top, red, orange);
+  @include linear-gradient(to top, $red, $orange);
 
-	font-family: $lucida-grande;
+  font-family: $lucida-grande;
 }
