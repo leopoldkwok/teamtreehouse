@@ -1,26 +1,13 @@
 
-@mixin roundy {
-	border-radius: 4px;
-	border-top-right-radius: 8px;
-	border-bottom-left-radius: 8px;
+@mixin roundy($radius-one, $radius-two) {
+	border-radius: $radius-one;
+	border-top-right-radius: $radius-two;
+	border-bottom-left-radius: $radius-two;
 
-}
-
-@mixin green_links {
-	a {
-		color: green;
-		&:hover {
-			color: blue;
-		}
-	}
-	h1 {
-		color: red;
-	}
 }
 
 .box {
 	@include roundy;
-	@include green_links;
 
 }
 

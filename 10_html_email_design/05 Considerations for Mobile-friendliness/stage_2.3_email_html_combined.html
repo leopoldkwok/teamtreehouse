@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
 	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- forces a mobile devices browser to render the email in zoomed outscale -->
     	<title>square gallery | Newsletter</title>
         <style type="text/css">
                 /*////// RESET STYLES //////*/
@@ -76,11 +77,34 @@
             @media only screen and (max-width: 480px) {
                 /*// RESET STYLES*/
                 td[id="introductionContainer"], td[id="callToActionContainer"], td[id="eventContainer"], td[id="merchandiseContainer"], td[id="footerContainer"]{padding-right: 10px !important; padding-left:10px !important;}
-                table[id="introductionBlock"], table[id="callToActionBlock"], table[id="eventBlock"], table[id="merchandiseBlock"], table[id="footerBlock"]{max-width: 480px !important; width: 100% !important; }
-
+                table[id="introductionBlock"], table[id="callToActionBlock"], table[id="eventBlock"], table[id="merchandiseBlock"], table[id="footerBlock"]{max-width: 480px !important; width: 100% !important; } /*resize content blocks and set a maxiumum width to them
+*/
            /* // CLIENT-SPECIFIC STYLES     */
 
             body{width:100% !important; min-width:100% !important;} /* Force iOS Mail to render the email at full width. */
+
+            /*GENERAL STYLES*/
+            h1{font-size: 34px !important;}
+            h2{font-size: 30px !important;}
+            h3{font-size: 24px !important;}
+
+            img[id="heroImage"]{height: auto !important; max-width: 520px !important; width: 100% !important;} /*image becomes fluid*/
+            td[class="introductionLogo"], td[class="introductionHeading"]{display:block !important;} /* items will stack on top of each other by using block elements*/
+            td[class="introductionHeading"]{padding: 40px 0 0 0 !important;}
+            td[class="introductionContent"]{padding-top: 20px !important;}
+
+            td[class="callToActionContent"]{text-align: left !important;}
+            table[class="callToActionButton"]{width: 100% !important;}
+
+            td[id="eventBlockCell"]{padding-right: 20px !important; padding-left: 20px !important;}
+            table[class="eventBlockCalendar"]{width: 100px !important;}
+
+            td[id="merchandiseBlockCell"]{padding-right: 20px !important; padding-left: 20px !important;}
+            td[class="merchandiseBlockHeading"] h2 {text-align: center !important;}
+            td[class="merchandiseBlockLeftColumn"], td[class="merchandiseBlockRightColumn"]{display: block !important; padding: 0 0 20px 0 !important; width: 100% !important;}
+
+            td[class="footerContent"]{font-size: 15px !important;}
+            td[class="footerContent"] a{display:block;}
 
             }
 
