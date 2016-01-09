@@ -8,7 +8,8 @@ var gulp = require('gulp'),
      del = require('del'),
   useref = require('gulp-useref'),
      iff = require('gulp-if'),
-    csso = require('gulp-csso');
+    csso = require('gulp-csso'),
+    pages = require('gulp-gh-pages');
 
 var options = {
   src: './src/',
@@ -40,7 +41,7 @@ gulp.task('watchFiles', function() {
 });
 
 gulp.task('assets', function(){
-  return gulp.src([options.src + 'img/**/*', 
+  return gulp.src([options.src + 'img/**/*',
                    options.src + 'fonts/**/*',
                    options.src + 'font-awesome/**/*',
                    options.src + 'mail/**/*'], {base: options.src})
@@ -57,6 +58,11 @@ gulp.task('clean', function() {
 });
 
 gulp.task('build', ['html', 'assets'])
+
+gulp.task('deploy', function() {
+  return gulp.src(options.dist + '**/*')
+    .pipe(pages());
+})
 
 gulp.task('default', ['clean'], function(){
   gulp.start('build');
