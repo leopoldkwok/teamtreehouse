@@ -1,0 +1,40 @@
+// Sass Function: Color Machine
+
+// Var
+$color: pink;
+
+// Function
+@function pxify($value) {
+	@return unquote($value + "px")
+}
+
+div {
+	height: 100px;
+	width: 255px;
+	border: 1px solid black;
+}
+
+.color {
+	background: $color;
+}
+
+.red, .blue, .green {
+	float: left;
+}
+// % of red in the pink color is going to be the width of the red box.
+.red {
+	background: red;
+	width: pxify(red($color));
+}
+
+// % of blue in the pink color is going to be the width of the red box.
+.blue {
+	background: blue;
+	width: pxify(blue($color));
+}
+
+// % of green in the pink color is going to be the width of the red box.
+.green {
+	background: green;
+	width: pxify(green($color));
+}
