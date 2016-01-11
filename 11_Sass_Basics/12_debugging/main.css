@@ -1,0 +1,28 @@
+/* line 9, main.scss */
+body {
+  background: #369;
+  font-family: Futura, "Trebuchet MS", sans-serif; }
+  /* line 12, main.scss */
+  body > h1 {
+    font-size: 3em;
+    color: #eee;
+    margin: 5px 0 0 5px; }
+
+/* line 21, main.scss */
+.entry {
+  background: white;
+  margin: 5px;
+  padding: 7.5px; }
+  /* line 25, main.scss */
+  .entry h1 {
+    font-size: 1.2em;
+    margin: 0px; }
+  /* line 29, main.scss */
+  .entry .date {
+    font-size: 0.3em;
+    color: #369; }
+  /* line 33, main.scss */
+  .entry a {
+    color: #369; }
+
+/*# sourceMappingURL=main.css.map */
