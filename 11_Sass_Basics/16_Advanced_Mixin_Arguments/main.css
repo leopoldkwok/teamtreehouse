@@ -1,0 +1,25 @@
+.box {
+  width: 10px;
+  height: 10px;
+  background: black;
+  display: inline; }
+
+div {
+  margin: 0px 0 0 10px; }
+
+.radiohead.thom {
+  background: url("images/radiohead/thom.jpg"); }
+
+.radiohead.jonny {
+  background: url("images/radiohead/jonny.jpg"); }
+
+.radiohead.colin {
+  background: url("images/radiohead/colin.jpg"); }
+
+.radiohead.phil {
+  background: url("images/radiohead/phil.jpg"); }
+
+.nin.trent {
+  background: url("images/nin/trent.jpg"); }
+
+/*# sourceMappingURL=main.css.map */

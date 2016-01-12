@@ -1,0 +1,25 @@
+@mixin box($size: 10px, $color: black, $display: block) { //setting default values
+	width: $size;
+	height: $size;
+	background: $color;
+	display: $display;
+}
+
+.box {
+	@include box($display: inline); // needs to be in a selector
+}
+
+@mixin band($name, $members...) {
+	@each $member in $members {
+		.#{$name}.#{$member} {
+			background: url("images/#{$name}/#{$member}.jpg")
+		}
+	}
+}
+
+div {
+	margin: 0px 0 0 10px; // 1 list
+}
+
+@include band(radiohead, thom, jonny, colin, phil);
+@include band(nin,trent);
