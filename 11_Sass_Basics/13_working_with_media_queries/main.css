@@ -1,0 +1,27 @@
+body {
+  font-family: Helvetica; }
+
+.content .sidebar {
+  background: #999;
+  color: white;
+  padding: 5px;
+  float: left;
+  width: 100px; }
+  .content .sidebar a {
+    display: block;
+    color: white; }
+  @media (max-width: 480px) {
+    .content .sidebar {
+      width: 95%; }
+      .content .sidebar a {
+        display: inline; } }
+.content .main {
+  padding: 5px;
+  background: #bbb;
+  display: inline-block;
+  width: 60%; }
+  @media (max-width: 480px) {
+    .content .main {
+      width: 95%; } }
+
+/*# sourceMappingURL=main.css.map */
