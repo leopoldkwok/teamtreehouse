@@ -1,0 +1,37 @@
+// Center text
+
+%centered {
+ text-align: center;
+}
+
+// Top border
+
+%t-border {
+  border-top: 2px solid $color-border-light;
+}
+
+// Containers
+
+%content {
+  width: 75%;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: auto;
+  max-width: 960px;
+}
+
+// Columns
+
+%columns {
+  width: 46.5%;
+}
+
+// Clearfix
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

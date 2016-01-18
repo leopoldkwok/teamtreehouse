@@ -1,0 +1,30 @@
+/* Web Fonts -------------------- */
+
+@include font-face('Abolition Regular', abolition-regular);
+
+.main {
+  &-heading {
+    font-size: 5.625rem;
+    color: $color-text-light;
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 1.3;
+    text-shadow: 0 1px 1px $color-shadow;
+    margin: 12px 0 0;
+  }
+
+  &-title {
+    color: $color-text-light;
+    font-size: 1.625rem;
+    letter-spacing: .065em;
+    font-weight: 200;
+    border-bottom: 2px solid;
+    padding-bottom: 10px;
+  }
+}
+
+.intro {
+  font-size: 1.25em;
+  line-height: 1.6;
+	color: initial;
+}
