@@ -1,8 +1,17 @@
-function getRandomNumber() {
-  var randomNumber = Math.floor( Math.random() * 6 ) + 1;
+function getRandomNumber(upper) {
+  var randomNumber = Math.floor( Math.random() * upper ) + 1;
   return randomNumber;
 }
 
-alert(getRandomNumber());
-console.log(getRandomNumber());
-var dieRoll = getRandomNumber();
+// alert(getRandomNumber(6));
+// console.log(getRandomNumber(6));
+// console.log(getRandomNumber(100));
+// console.log(getRandomNumber(10000));
+// console.log(getRandomNumber(2));
+// var dieRoll = getRandomNumber();
+
+function getArea(width, length, unit) {
+  var area = width * length;
+  return area + " " + unit;
+}
+console.log(getArea(10, 20, 'sq ft'));
