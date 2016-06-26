@@ -1,6 +1,7 @@
 var message = '';
 var student; /* hold a student object */
 var search;
+var reportFound;
 
 function print(message) {
   var outputDiv = document.getElementById('output');
@@ -25,8 +26,13 @@ while (true) {
   if (student.name === search) {
     message = getStudentReport(student);
     print(message);
+    reportFound = true;
   }
+}
 
+if (!reportFound) {
+  message = "<p> There is no student with the name " + search.toUpperCase() + ".</p>";
+  print(message);
 }
 
 
@@ -34,4 +40,4 @@ while (true) {
 }
 
 
-print(message);
+// print(message);
