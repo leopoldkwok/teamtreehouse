@@ -8,7 +8,7 @@ $("#menu").append($select);
 $("#menu a").each(function() {
   var $anchor = $(this);
   // Create an option
-  var option = $("<option></option");
+  var $option = $("<option></option");
 
   // option's value is the href
   $option.val($anchor.attr("href"));
