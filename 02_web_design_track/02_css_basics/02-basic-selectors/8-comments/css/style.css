@@ -1,0 +1,82 @@
+/* Type Selectors */
+
+/*
+
+  This helpful
+  comment spans
+  multiple lines
+
+*/
+
+body {
+  color: #878787;
+  margin: 0;
+}
+
+ol li {
+  background-color: tomato;
+  color: white;
+  margin-bottom: 5px;
+}
+
+h1 {
+  font-size: 90px;
+  color: white;
+}
+
+h2 {
+  font-size: 53px;
+}
+
+h3 {
+  font-size: 20px;
+  color: #48525c;
+}
+
+a:link {
+  color: orange;
+}
+
+a:visited {
+  color: lightblue;
+}
+
+a:hover {
+  color: forestgreen;
+}
+
+a:active {
+  color: lightcoral;
+}
+
+:focus {
+  color: white;
+  background-color: orange;
+}
+
+/* ID Selectors */
+
+#main-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: solid 10px orange;
+}
+
+/* Class Selectors */
+
+.primary-content {
+  text-align: center;
+}
+
+.t-border {
+  border-top: 2px solid lightgrey;
+}
+
+.main-header {
+  background-color: orange; /* This makes our header bg orange. */
+}
+
+.title {
+  color: white;
+  font-size: 26px;
+}
