@@ -1,0 +1,51 @@
+/* --------------------------
+  BASE
+--------------------------- */
+
+body {
+  padding-top: 5em;
+}
+
+svg {
+  width: 33.32%;
+  float: left;
+}
+
+.gear-bg,
+.hammer-bg,
+.heart-bg {
+
+  transition: .3s ease-out;
+
+}
+
+/* --------------------------
+  GEAR
+--------------------------- */
+
+
+.gear-bg:hover {
+  fill: #3881cc;
+}
+
+
+/* --------------------------
+  HAMMER
+--------------------------- */
+.hammer-bg {
+  stroke: #fee16e;
+}
+
+.hammer-bg:hover {
+  fill: #feae6e;
+  stroke-width: 8;
+}
+
+
+/* --------------------------
+  HEART
+--------------------------- */
+.heart-bg:hover {
+  fill: #ff5e5e;
+}
+
