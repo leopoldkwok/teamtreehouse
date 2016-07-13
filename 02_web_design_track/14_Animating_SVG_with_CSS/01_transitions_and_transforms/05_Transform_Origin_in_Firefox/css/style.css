@@ -1,0 +1,58 @@
+/* --------------------------
+  BASE
+--------------------------- */
+
+body {
+  padding-top: 5em;
+}
+
+svg {
+  width: 33.32%;
+  float: left;
+
+}
+
+.gear-icon,
+.hammer-icon,
+.heart-icon {
+
+    transform-origin: 200px 50px;
+}
+
+/* --------------------------
+  GEAR
+--------------------------- */
+
+.gear-icon {
+  transition: transform .4s ease-out;
+
+}
+
+.gear:hover .gear-icon {
+  transform: rotate(45deg) scale(1.3);
+}
+
+
+
+/* --------------------------
+  HAMMER
+--------------------------- */
+
+.hammer:hover .hammer-icon {
+  transform: rotate(45deg);
+}
+
+.hammer-icon {
+  transition: transform .3s ease-out;
+}
+/* --------------------------
+  HEART
+--------------------------- */
+.heart:hover .heart-icon {
+  transform: scale(1.3);
+}
+
+.heart-icon {
+  transition: transform: .2s ease-out;
+}
+
