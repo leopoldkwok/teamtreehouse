@@ -1,0 +1,51 @@
+/* --------------------------
+  Base
+--------------------------- */
+
+body {
+  background: #8069a1;
+  padding-top: 60px;
+}
+
+svg {
+	margin: auto;
+  display: block;
+}
+
+/* --------------------------
+  Keyframes
+--------------------------- */
+@keyframes grow {
+  0% {
+    transform: scale(0);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  60% {
+    transform: scale(0.9);
+  }
+}
+
+
+/* --------------------------
+  SVG Styles
+--------------------------- */
+
+.badge * {
+  transform-origin: 50% 50%;
+}
+
+.outer,
+.inner,
+.inline {
+  animation: grow 1s ease-out backwards;
+}
+
+.inner {
+  animation-delay: .1s;
+}
+
+.inline {
+  animation-delay: .15s;
+}
