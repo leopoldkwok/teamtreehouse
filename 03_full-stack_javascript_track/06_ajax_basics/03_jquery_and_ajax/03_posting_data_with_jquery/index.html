@@ -10,8 +10,8 @@
 
     $('form').submit(function(evt) {
       evt.preventDefault(); // prevents moving to a different page
-      var url = $(this).attr("action");
-      var formData = $(this).serialize();
+      var url = $(this).attr("action"); // Captures the form's action attribute (e.g. process.php)
+      var formData = $(this).serialize(); // Serialize() transforms the content of your form into a string so it can be send thru the url to the server
       $.post(url, formData, function(response) {
           $('#signup').html("<p>Thanks for signing up!</p>");
       }); // end post
